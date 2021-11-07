@@ -1,3 +1,14 @@
 <div>
-    <p>main works!</p>
+    <div *ngIf="!isSignSelected" class="sign-grid">
+        <button *ngFor="let s of SIGNS" class="sign" (click)="signSelected()" mat-stroked-button>
+            {{s}}
+        </button>
+    </div>
+
+    <div *ngIf="isSignSelected" class="position-grid">
+        <button *ngFor="let p of POSITIONS" class="position" (click)="positionSelected()" mat-stroked-button>
+            {{p}}
+        </button>
+    </div>
+    
 </div>

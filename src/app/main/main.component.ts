@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
+    isSignSelected = false;
+    isRoleSelected = false;
+    SIGNS = ['Bélier', 'Taureau', 'Gémaux', 'Cancer', 'Lion', 'Vierge', 'Balance', 'Scorpion', 'Sagittaire', 'Capricorne', 'Verseau', 'Poisson']
+    POSITIONS = ['TOP', 'JUNGLE', 'MID', 'ADC', 'SUPPORT']
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  public signSelected() {
+    this.isSignSelected = !this.isSignSelected
+  }
+
+  public positionSelected() {
+    this.isRoleSelected = !this.isRoleSelected
   }
 
 }

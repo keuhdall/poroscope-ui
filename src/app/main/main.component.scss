@@ -1,0 +1,21 @@
+.sign {
+    margin: 2em 1em 2em 1em;
+    flex: 1 0 30%;
+    height: 10em;
+}
+
+.sign-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.position {
+    margin: 2em 1em 2em 1em;
+    flex: 1 0 50%;
+    height: 10em;
+}
+
+.position-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
